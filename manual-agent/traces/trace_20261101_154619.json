@@ -1,0 +1,49 @@
+{
+  "goal": "Що таке запах коду?",
+  "stop_reason": "finish",
+  "steps": 4,
+  "llm_calls": 4,
+  "final_answer": "Інформація про запах коду не знайдена у перевірених джерелах.",
+  "trace": [
+    {
+      "step": 1,
+      "action": "lookup_code_smell",
+      "arguments": {
+        "name": "code smell"
+      },
+      "decision_summary": "Я зроблю пошук, щоб отримати точне визначення запаху коду.",
+      "observation": "NOT_FOUND: no verified information about 'code smell'.",
+      "seconds": 0.98
+    },
+    {
+      "step": 2,
+      "action": "lookup_code_smell",
+      "arguments": {
+        "name": "code smell"
+      },
+      "decision_summary": "Намагаюся знайти інформацію про запах коду, оскільки попередня спроба була невдалою.",
+      "observation": "NOT_FOUND: no verified information about 'code smell'.",
+      "seconds": 3.61
+    },
+    {
+      "step": 3,
+      "action": "lookup_code_smell",
+      "arguments": {
+        "name": "code smell"
+      },
+      "decision_summary": "Виконую пошук визначення 'code smell', оскільки попередня спроба була невдалою.",
+      "observation": "NOT_FOUND: no verified information about 'code smell'.",
+      "seconds": 0.78
+    },
+    {
+      "step": 4,
+      "action": "finish",
+      "arguments": {
+        "answer": "Інформація про запах коду не знайдена у перевірених джерелах."
+      },
+      "decision_summary": "Оскільки пошук не дав результатів, я завершую виконання з повідомленням про відсутність інформації.",
+      "observation": null,
+      "seconds": 0.9
+    }
+  ]
+}
